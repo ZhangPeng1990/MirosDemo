@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="bottomPadding" format="dimension"></attr>
+
+    <declare-styleable name="BottomMenu">
+        <attr name="bottomPadding"></attr>
+    </declare-styleable>
+
+</resources>

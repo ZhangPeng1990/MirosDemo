@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
     tools:context="innodev.com.cn.mirosdemo.MainActivity">
 
     <ImageView
@@ -18,14 +19,81 @@
 
     <ImageView
         android:id="@+id/iv2"
+        android:layout_toRightOf="@+id/iv"
         android:src="@drawable/bianqian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="120px"
-        android:layout_height="120px"
-        android:layout_centerHorizontal="true" />
+    <VideoView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/videoView"
+        android:layout_alignBottom="@+id/iv2"
+        android:layout_toRightOf="@+id/iv2"
+        android:layout_toEndOf="@+id/iv2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bottom_back">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/id_img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="69dp"
+                android:src="@drawable/img_1"
+                android:layout_marginStart="69dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/id_img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="78dp"
+                android:src="@drawable/img_2"
+                android:layout_marginStart="78dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/id_img1"
+                android:layout_toEndOf="@+id/id_img1" />
+
+
+            <ImageView
+                android:id="@+id/id_img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/img_3"
+                android:layout_marginStart="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/id_img1"
+                android:layout_toEndOf="@+id/id_img1" />
+
+            <ImageView
+                android:id="@+id/id_img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="260dp"
+                android:src="@drawable/img_4"
+                android:layout_marginStart="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/id_img1"
+                android:layout_toEndOf="@+id/id_img1" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
